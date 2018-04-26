@@ -1,0 +1,69 @@
+[2018-04-26 14:21:28] [info] Start Program:
+Path:"E:\CMP 2018\402\Testing\Trials\PT-Project\Debug\PT-Project-Test_F.exe"
+Arguments:
+Working directory: "E:\CMP 2018\402\Testing\Trials\PT-Project-Test_F\"
+Modules: Selected: E:\CMP 2018\402\Testing\Trials\PT-Project\Debug\PT-Project-Test_F.exe Excluded: 
+Sources: Selected: E:\CMP 2018\402\Testing\Trials\PT-Project\CMUgraphicsLib\* E:\CMP 2018\402\Testing\Trials\PT-Project\packages\* E:\CMP 2018\402\Testing\Trials\PT-Project Excluded: *.h E:\CMP 2018\402\Testing\Trials\PT-Project\CMUgraphicsLib\* E:\CMP 2018\402\Testing\Trials\PT-Project\packages\* 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Antou\AppData\Local\Temp\ibi4xj2m.4zj 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+
+[2018-04-26 14:21:28] [info] Module: E:\CMP 2018\402\Testing\Trials\PT-Project\Debug\PT-Project-Test_F.exe is selected because it matches selected pattern: E:\CMP 2018\402\Testing\Trials\PT-Project\Debug\PT-Project-Test_F.exe
+[2018-04-26 14:21:28] [warning] e:\cmp 2018\402\testing\trials\pt-project-test_f\test-edge-conditional.cpp line 385 does not exist, skipped
+[2018-04-26 14:21:29] [warning] e:\cmp 2018\402\testing\trials\pt-project-test_f\test-addcond.cpp line 64 does not exist, skipped
+[2018-04-26 14:21:29] [warning] e:\cmp 2018\402\testing\trials\pt-project-test_f\test-addcond.cpp line 64 does not exist, skipped
+[2018-04-26 14:21:29] [warning] e:\cmp 2018\402\testing\trials\pt-project-test_f\test-addcond.cpp line 64 does not exist, skipped
+[2018-04-26 14:21:29] [warning] e:\cmp 2018\402\testing\trials\pt-project\applicationmanager.cpp line 438 does not exist, skipped
+[2018-04-26 14:21:29] [warning] e:\cmp 2018\402\testing\trials\pt-project\actions\run.cpp line 97 does not exist, skipped
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\ntdll.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\kernel32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\KernelBase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\user32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\win32u.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\winmm.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\gdi32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\msvcrt.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\gdi32full.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\msvcp_win.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\winmmbase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\cfgmgr32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\ucrtbase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\winmmbase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\vcruntime140d.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\ucrtbased.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\msvcp140d.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\imm32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\combase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\rpcrt4.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\sspicli.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\cryptbase.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\bcryptprimitives.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\sechost.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\uxtheme.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\msctf.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\oleaut32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\dwmapi.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\kernel.appcore.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\TextInputFramework.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\CoreUIComponents.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\CoreMessaging.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\SHCore.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\ntmarta.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\WinTypes.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\advapi32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Program Files\Lingoes\Translator2\OpenText32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\ole32.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\oleacc.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Program Files (x86)\Internet Download Manager\idmmkb.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Program Files (x86)\Internet Download Manager\idmmkb.dll is skipped because it matches no selected patterns
+[2018-04-26 14:21:29] [info] Module: C:\Windows\SysWOW64\version.dll is skipped because it matches no selected patterns
+[2018-04-26 14:22:22] [info] ----------------------------------------------------
+[2018-04-26 14:22:22] [info] Coverage binary generated in file: C:\Users\Antou\AppData\Local\Temp\ibi4xj2m.4zj
+[2018-04-26 14:22:22] [info] ----------------------------------------------------
+[2018-04-26 14:22:22] [error] Your program stop with error code: 1

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Actions\Action.cpp" />
+    <ClCompile Include="..\Actions\AddCond.cpp" />
+    <ClCompile Include="..\Actions\AddReadWrite.cpp" />
+    <ClCompile Include="..\Actions\AddSmplAssign.cpp" />
+    <ClCompile Include="..\Actions\AddVariable.cpp" />
+    <ClCompile Include="..\Actions\Add_Conn.cpp" />
+    <ClCompile Include="..\Actions\Add_Start_End.cpp" />
+    <ClCompile Include="..\Actions\Comment.cpp" />
+    <ClCompile Include="..\Actions\Delete.cpp" />
+    <ClCompile Include="..\Actions\Load.cpp" />
+    <ClCompile Include="..\Actions\Run.cpp" />
+    <ClCompile Include="..\Actions\Save.cpp" />
+    <ClCompile Include="..\Actions\Validate.cpp" />
+    <ClCompile Include="..\ApplicationManager.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\auxil.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\CMUgraphics.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\colors.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\image.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\jpegload.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jcomapi.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jcparam.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdapimin.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdapistd.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdatasrc.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdcoefct.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdcolor.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jddctmgr.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdhuff.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdinput.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdmainct.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdmarker.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdmaster.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdmerge.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdphuff.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdpostct.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdsample.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jdtrans.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jerror.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jidctflt.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jidctfst.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jidctint.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jidctred.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jmemmgr.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jmemnobs.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jquant1.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jquant2.c" />
+    <ClCompile Include="..\CMUgraphicsLib\jpeg\jutils.c" />
+    <ClCompile Include="..\CMUgraphicsLib\keyqueue.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\mousequeue.cpp" />
+    <ClCompile Include="..\CMUgraphicsLib\windowinput.cpp" />
+    <ClCompile Include="..\GUI\Input.cpp" />
+    <ClCompile Include="..\GUI\Output.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Statements\Conditional.cpp" />
+    <ClCompile Include="..\Statements\Connector.cpp" />
+    <ClCompile Include="..\Statements\ReadWrite.cpp" />
+    <ClCompile Include="..\Statements\SmplAssign.cpp" />
+    <ClCompile Include="..\Statements\Start_End.cpp" />
+    <ClCompile Include="..\Statements\Statement.cpp" />
+    <ClCompile Include="..\Statements\Variable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Actions\Action.h" />
+    <ClInclude Include="..\Actions\AddCond.h" />
+    <ClInclude Include="..\Actions\AddReadWrite.h" />
+    <ClInclude Include="..\Actions\AddSmplAssign.h" />
+    <ClInclude Include="..\Actions\AddVariable.h" />
+    <ClInclude Include="..\Actions\Add_Conn.h" />
+    <ClInclude Include="..\Actions\Add_Start_End.h" />
+    <ClInclude Include="..\Actions\Comment.h" />
+    <ClInclude Include="..\Actions\Delete.h" />
+    <ClInclude Include="..\Actions\Load.h" />
+    <ClInclude Include="..\Actions\Run.h" />
+    <ClInclude Include="..\Actions\Save.h" />
+    <ClInclude Include="..\Actions\Validate.h" />
+    <ClInclude Include="..\ApplicationManager.h" />
+    <ClInclude Include="..\CMUgraphicsLib\auxil.h" />
+    <ClInclude Include="..\CMUgraphicsLib\CMUgraphics.h" />
+    <ClInclude Include="..\CMUgraphicsLib\colors.h" />
+    <ClInclude Include="..\CMUgraphicsLib\error.h" />
+    <ClInclude Include="..\CMUgraphicsLib\image.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpegload.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jconfig.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jdct.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jdhuff.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jerror.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jinclude.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jmemsys.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jpegint.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jpeglib.h" />
+    <ClInclude Include="..\CMUgraphicsLib\jpeg\jversion.h" />
+    <ClInclude Include="..\CMUgraphicsLib\keyqueue.h" />
+    <ClInclude Include="..\CMUgraphicsLib\mousequeue.h" />
+    <ClInclude Include="..\CMUgraphicsLib\version.h" />
+    <ClInclude Include="..\CMUgraphicsLib\windowinput.h" />
+    <ClInclude Include="..\DEFS.h" />
+    <ClInclude Include="..\GUI\Input.h" />
+    <ClInclude Include="..\GUI\Output.h" />
+    <ClInclude Include="..\GUI\UI_Info.h" />
+    <ClInclude Include="..\Statements\Conditional.h" />
+    <ClInclude Include="..\Statements\Connector.h" />
+    <ClInclude Include="..\Statements\ReadWrite.h" />
+    <ClInclude Include="..\Statements\SmplAssign.h" />
+    <ClInclude Include="..\Statements\Start_End.h" />
+    <ClInclude Include="..\Statements\Statement.h" />
+    <ClInclude Include="..\Statements\Variable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\CMUgraphicsLib\Manual.txt" />
+    <Text Include="..\CMUgraphicsLib\Readme.txt" />
+    <Text Include="..\Flow_Chart.txt" />
+    <Text Include="..\Flow_Code.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\images\bg-sim.jpg" />
+    <Image Include="..\images\bg.jpg" />
+    <Image Include="..\images\bg1.jpg" />
+    <Image Include="..\images\lasttool.jpg" />
+    <Image Include="..\images\newsim.jpg" />
+    <Image Include="..\images\statusbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9C88F00F-85C9-41EC-94B9-087EFE5625D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PTProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\gtest.1.7.0\build\native\gtest.targets" Condition="Exists('..\packages\gtest.1.7.0\build\native\gtest.targets')" />
+    <Import Project="..\packages\gmock.1.7.0\build\native\gmock.targets" Condition="Exists('..\packages\gmock.1.7.0\build\native\gmock.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\gtest.1.7.0\build\native\gtest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gtest.1.7.0\build\native\gtest.targets'))" />
+    <Error Condition="!Exists('..\packages\gmock.1.7.0\build\native\gmock.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gmock.1.7.0\build\native\gmock.targets'))" />
+  </Target>
+</Project>

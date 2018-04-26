@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72c48a6f-0b70-4628-be2d-9483a7079f87}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PT-Project\PT-Project\PT-Project.vcxproj">
+      <Project>{9c88f00f-85c9-41ec-94b9-087efe5625d0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PT-Project\Actions\Action.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\AddCond.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\AddReadWrite.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\AddSmplAssign.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\AddVariable.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Add_Conn.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Add_Start_End.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Comment.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Delete.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Load.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Run.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Save.cpp" />
+    <ClCompile Include="..\PT-Project\Actions\Validate.cpp" />
+    <ClCompile Include="..\PT-Project\ApplicationManager.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\auxil.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\CMUgraphics.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\colors.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\image.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpegload.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jcomapi.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jcparam.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdapimin.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdapistd.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdatasrc.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdcoefct.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdcolor.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jddctmgr.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdhuff.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdinput.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmainct.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmarker.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmaster.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmerge.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdphuff.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdpostct.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdsample.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdtrans.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jerror.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctflt.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctfst.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctint.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctred.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemmgr.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemnobs.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jquant1.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jquant2.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jutils.c" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\keyqueue.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\mousequeue.cpp" />
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\windowinput.cpp" />
+    <ClCompile Include="..\PT-Project\GUI\Input.cpp" />
+    <ClCompile Include="..\PT-Project\GUI\Output.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\Conditional.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\Connector.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\ReadWrite.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\SmplAssign.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\Start_End.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\Statement.cpp" />
+    <ClCompile Include="..\PT-Project\Statements\Variable.cpp" />
+    <ClCompile Include="Test-Edge-Actions.cpp" />
+    <ClCompile Include="Test-AddCond.cpp" />
+    <ClCompile Include="Test-Edge-AddConn.cpp" />
+    <ClCompile Include="Test-AddReadWrite.cpp" />
+    <ClCompile Include="Test-AddSmplAssgn.cpp" />
+    <ClCompile Include="Test-AddStartEnd.cpp" />
+    <ClCompile Include="Test-AddVatiable.cpp" />
+    <ClCompile Include="Test-ApplicatitonManager.cpp" />
+    <ClCompile Include="Test-Comment.cpp" />
+    <ClCompile Include="Test-Edge-Conditional.cpp" />
+    <ClCompile Include="Test-Edge-Connector.cpp" />
+    <ClCompile Include="Test-Delete.cpp" />
+    <ClCompile Include="Test-G_CC-Actions.cpp" />
+    <ClCompile Include="Test-G_CC-AddConn.cpp" />
+    <ClCompile Include="Test-G_CC-Conditional.cpp" />
+    <ClCompile Include="Test-G_CC-Run.cpp" />
+    <ClCompile Include="Test-G_CC-Statement.cpp" />
+    <ClCompile Include="Test-G_CC-Validate.cpp" />
+    <ClCompile Include="Test-G_CC-Variable.cpp" />
+    <ClCompile Include="Test-Input.cpp" />
+    <ClCompile Include="Test-Load.cpp" />
+    <ClCompile Include="Test-ReadWrite.cpp" />
+    <ClCompile Include="Test-Edge-Run.cpp" />
+    <ClCompile Include="Test-Save.cpp" />
+    <ClCompile Include="Test-SmplAssign.cpp" />
+    <ClCompile Include="Test-StartEnd.cpp" />
+    <ClCompile Include="Test-Edge-Statement.cpp" />
+    <ClCompile Include="Test-Edge-validate.cpp" />
+    <ClCompile Include="Test-Edge-Variable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PT-Project\Actions\Action.h" />
+    <ClInclude Include="..\PT-Project\Actions\AddCond.h" />
+    <ClInclude Include="..\PT-Project\Actions\AddReadWrite.h" />
+    <ClInclude Include="..\PT-Project\Actions\AddSmplAssign.h" />
+    <ClInclude Include="..\PT-Project\Actions\AddVariable.h" />
+    <ClInclude Include="..\PT-Project\Actions\Add_Conn.h" />
+    <ClInclude Include="..\PT-Project\Actions\Add_Start_End.h" />
+    <ClInclude Include="..\PT-Project\Actions\Comment.h" />
+    <ClInclude Include="..\PT-Project\Actions\Delete.h" />
+    <ClInclude Include="..\PT-Project\Actions\Load.h" />
+    <ClInclude Include="..\PT-Project\Actions\Run.h" />
+    <ClInclude Include="..\PT-Project\Actions\Save.h" />
+    <ClInclude Include="..\PT-Project\Actions\Validate.h" />
+    <ClInclude Include="..\PT-Project\ApplicationManager.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\auxil.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\CMUgraphics.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\colors.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\error.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\image.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpegload.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jconfig.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jdct.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jdhuff.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jerror.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jinclude.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemsys.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jmorecfg.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jpegint.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jpeglib.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jversion.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\keyqueue.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\mousequeue.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\version.h" />
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\windowinput.h" />
+    <ClInclude Include="..\PT-Project\DEFS.h" />
+    <ClInclude Include="..\PT-Project\GUI\Input.h" />
+    <ClInclude Include="..\PT-Project\GUI\Output.h" />
+    <ClInclude Include="..\PT-Project\GUI\UI_Info.h" />
+    <ClInclude Include="..\PT-Project\Statements\Conditional.h" />
+    <ClInclude Include="..\PT-Project\Statements\Connector.h" />
+    <ClInclude Include="..\PT-Project\Statements\ReadWrite.h" />
+    <ClInclude Include="..\PT-Project\Statements\SmplAssign.h" />
+    <ClInclude Include="..\PT-Project\Statements\Start_End.h" />
+    <ClInclude Include="..\PT-Project\Statements\Statement.h" />
+    <ClInclude Include="..\PT-Project\Statements\Variable.h" />
+    <ClInclude Include="InputOutputAppManagerMocking.h" />
+    <ClInclude Include="WindowsMock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\PT-Project\CMUgraphicsLib\Manual.txt" />
+    <Text Include="..\PT-Project\CMUgraphicsLib\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\PT-Project\images\bg-sim.jpg" />
+    <Image Include="..\PT-Project\images\bg.jpg" />
+    <Image Include="..\PT-Project\images\bg1.jpg" />
+    <Image Include="..\PT-Project\images\lasttool.jpg" />
+    <Image Include="..\PT-Project\images\newsim.jpg" />
+    <Image Include="..\PT-Project\images\statusbar.jpg" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\PT-Project\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets" Condition="Exists('..\PT-Project\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" />
+    <Import Project="..\PT-Project\packages\gmock.1.7.0\build\native\gmock.targets" Condition="Exists('..\PT-Project\packages\gmock.1.7.0\build\native\gmock.targets')" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>X64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>X64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\PT-Project\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\PT-Project\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets'))" />
+    <Error Condition="!Exists('..\PT-Project\packages\gmock.1.7.0\build\native\gmock.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\PT-Project\packages\gmock.1.7.0\build\native\gmock.targets'))" />
+  </Target>
+</Project>

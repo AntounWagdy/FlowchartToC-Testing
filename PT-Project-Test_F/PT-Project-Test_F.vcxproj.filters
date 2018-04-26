@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Statements">
+      <UniqueIdentifier>{0f07d239-0228-46f3-958f-6bf5bbcb0c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actions">
+      <UniqueIdentifier>{83abbaea-2898-4453-8d0d-6e5188b52014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{ddd2c52e-9d77-46c5-851e-030648566f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMUgraphicslib">
+      <UniqueIdentifier>{2ee07790-3599-43ab-bec0-a8617c85dba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMUgraphicslib\jpeg">
+      <UniqueIdentifier>{d6a98dff-8226-4ba4-9bb7-9cf99e573921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="images">
+      <UniqueIdentifier>{9da2e323-86a5-4497-9bca-a8fc2c26dffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test-Statements">
+      <UniqueIdentifier>{c092a503-08c5-4737-9369-5531ba8b0909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test-Actions">
+      <UniqueIdentifier>{ff0dcd7a-6e91-4366-b390-feb486fcfa04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test-GUI">
+      <UniqueIdentifier>{bee17ca6-91ee-45fc-bb31-e4fe61e84856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test-ApplicationManager">
+      <UniqueIdentifier>{a96febf4-d172-468a-a2ed-d9d43fe9199b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PT-Project\Statements\Conditional.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\Connector.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\ReadWrite.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\SmplAssign.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\Start_End.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\Statement.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Statements\Variable.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Action.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Add_Conn.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Add_Start_End.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\AddCond.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\AddReadWrite.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\AddSmplAssign.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\AddVariable.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Comment.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Delete.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Load.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Run.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Save.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\Actions\Validate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\GUI\Input.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\GUI\Output.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\auxil.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\CMUgraphics.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\colors.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\image.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpegload.c">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\keyqueue.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\mousequeue.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\windowinput.cpp">
+      <Filter>CMUgraphicslib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jcomapi.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jcparam.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdapimin.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdapistd.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdatasrc.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdcoefct.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdcolor.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jddctmgr.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdhuff.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdinput.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmainct.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmarker.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmaster.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdmerge.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdphuff.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdpostct.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdsample.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jdtrans.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jerror.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctflt.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctfst.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctint.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jidctred.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemmgr.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemnobs.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jquant1.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jquant2.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\CMUgraphicsLib\jpeg\jutils.c">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PT-Project\ApplicationManager.cpp" />
+    <ClCompile Include="Test-ReadWrite.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-SmplAssign.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-StartEnd.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-AddReadWrite.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-AddSmplAssgn.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-AddStartEnd.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-AddVatiable.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Comment.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Load.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Save.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Input.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-ApplicatitonManager.cpp">
+      <Filter>Test-ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Conditional.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Conditional.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Connector.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Statement.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Statement.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Variable.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Variable.cpp">
+      <Filter>Test-Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Actions.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Actions.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-AddCond.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-AddConn.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-AddConn.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc" />
+    <ClCompile Include="Test-Delete.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-Run.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Run.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-validate.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-Validate.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PT-Project\Statements\Conditional.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\Connector.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\ReadWrite.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\SmplAssign.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\Start_End.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\Statement.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Statements\Variable.h">
+      <Filter>Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Action.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Add_Conn.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Add_Start_End.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\AddCond.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\AddReadWrite.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\AddSmplAssign.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\AddVariable.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Comment.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Delete.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Load.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Run.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Save.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\Actions\Validate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\GUI\Input.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\GUI\Output.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\GUI\UI_Info.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\auxil.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\CMUgraphics.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\colors.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\error.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\image.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpegload.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\keyqueue.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\mousequeue.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\version.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\windowinput.h">
+      <Filter>CMUgraphicslib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jconfig.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jdct.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jdhuff.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jerror.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jinclude.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jmemsys.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jmorecfg.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jpegint.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jpeglib.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\CMUgraphicsLib\jpeg\jversion.h">
+      <Filter>CMUgraphicslib\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PT-Project\ApplicationManager.h" />
+    <ClInclude Include="..\PT-Project\DEFS.h" />
+    <ClInclude Include="InputOutputAppManagerMocking.h">
+      <Filter>Test-Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMock.h">
+      <Filter>Test-GUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\PT-Project\CMUgraphicsLib\Manual.txt">
+      <Filter>CMUgraphicslib</Filter>
+    </Text>
+    <Text Include="..\PT-Project\CMUgraphicsLib\Readme.txt">
+      <Filter>CMUgraphicslib</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\PT-Project\images\bg.jpg">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="..\PT-Project\images\bg1.jpg">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="..\PT-Project\images\bg-sim.jpg">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="..\PT-Project\images\lasttool.jpg">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="..\PT-Project\images\newsim.jpg">
+      <Filter>images</Filter>
+    </Image>
+    <Image Include="..\PT-Project\images\statusbar.jpg">
+      <Filter>images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

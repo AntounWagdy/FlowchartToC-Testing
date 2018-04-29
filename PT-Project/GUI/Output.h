@@ -9,7 +9,7 @@ private:
 	window* pWind;	//Pointer to the Graphics Window
 public:
 
-	friend class ActionEdgeCoverage; // to get windows in test to init input
+	friend class TEST_FIXTURE; // to get windows in test to init input
 	friend class GUIEdgeCoverage; // to get windows in test to init input
 
 	Output();	

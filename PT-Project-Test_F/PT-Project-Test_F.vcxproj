@@ -112,6 +112,9 @@
     <ClCompile Include="Test-Edge-Conditional.cpp" />
     <ClCompile Include="Test-Edge-Connector.cpp" />
     <ClCompile Include="Test-Delete.cpp" />
+    <ClCompile Include="Test-EdgePair-AddConn.cpp" />
+    <ClCompile Include="Test-EdgePair-Conditional.cpp" />
+    <ClCompile Include="Test-EdgePair-Statement.cpp" />
     <ClCompile Include="Test-G_CC-Actions.cpp" />
     <ClCompile Include="Test-G_CC-AddConn.cpp" />
     <ClCompile Include="Test-G_CC-Conditional.cpp" />
@@ -216,7 +219,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>X64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -228,6 +231,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

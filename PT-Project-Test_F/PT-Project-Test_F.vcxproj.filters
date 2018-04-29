@@ -297,6 +297,15 @@
     <ClCompile Include="Test-G_CC-Validate.cpp">
       <Filter>Test-Actions</Filter>
     </ClCompile>
+    <ClCompile Include="Test-EdgePair-AddConn.cpp">
+      <Filter>Test-Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-EdgePair-Conditional.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-EdgePair-Statement.cpp">
+      <Filter>Statements</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\PT-Project\Statements\Conditional.h">

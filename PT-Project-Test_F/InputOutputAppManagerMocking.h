@@ -58,11 +58,13 @@ public:
 //==================================================================================//
 
 
-typedef ActionEdgeCoverage ActionGACC;
-typedef ActionEdgeCoverage ActionGICC;
+typedef TEST_FIXTURE ActionGACC;
+typedef TEST_FIXTURE ActionGICC;
+typedef TEST_FIXTURE ActionEdgeCoverage;
+typedef TEST_FIXTURE ActionEdgePairCoverage;
 
 
-struct ActionEdgeCoverage : testing::Test {
+struct TEST_FIXTURE : testing::Test {
 public:
 	mockAppManager *App;
 	mockOutput * out;
@@ -88,3 +90,4 @@ public:
 		*/
 	}
 };
+

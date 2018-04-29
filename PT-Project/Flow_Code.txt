@@ -1,8 +1,0 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-	double x;
-	x=12;
-	return 0;
-}

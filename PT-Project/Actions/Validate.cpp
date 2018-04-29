@@ -61,7 +61,7 @@ void Validate::Execute()
 		}
 	}
 		
-	if(St_Count==1 && Count==0 && En_Count==1 && End>=1)
+	if(Count==0 &&  End>=1)
 	{
 		Valid=true;
 		pOut->PrintMessage("Congratulation, your flow chart is valid, you can debug, run or generate your code :D ");

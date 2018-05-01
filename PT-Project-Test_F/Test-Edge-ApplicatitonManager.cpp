@@ -1,5 +1,6 @@
 #include"../PT-Project/ApplicationManager.h"
 #include"../PT-Project/Actions/Save.h"
+#include"StatementInputOutputMock.h"
 #include<gtest\gtest.h>
 #include<gmock\gmock.h>
 
@@ -340,5 +341,35 @@ TEST(AppEdgeCoverage, Loading_TEST_2) {
 		if (dynamic_cast<Variable*>(app->Statementlist()[i]))
 			g = true;
 	}
-	EXPECT_TRUE(a&&b&&c&&d&&e&&f&&g);
+	EXPECT_TRUE(a && b && c && d && e && f && g);
 }
+
+TEST(AppEdgeCoverage, GetInput) {
+	ApplicationManager App;
+	Input* a = App.GetInput();
+	EXPECT_NE(a, (Input*)NULL);
+}
+TEST_F(AppEdgeCoverage_F, GetUserAction) {	
+	EXPECT_CALL(*in, GetUserAction()).WillOnce(Return(ADD_CONDITION));
+	EXPECT_EQ(App->GetUserAction(),ADD_CONDITION);
+}
+
+
+TEST_F(AppEdgeCoverage_F, UpdateInterface) {
+	mockConditional* st1 = new mockConditional();
+	mockConditional* st2 = new mockConditional();
+	mockConnector* c1 = new mockConnector(st1,st2);
+	mockConnector* c2 = new mockConnector(st1, st2);
+
+	App->AddStatement(st1);
+	App->AddStatement(st2);
+	App->AddConnector(c1);
+	App->AddConnector(c2);
+
+	EXPECT_CALL(*st1,Draw(_));
+	EXPECT_CALL(*st2, Draw(_));
+	EXPECT_CALL(*c1, Draw(_));
+	EXPECT_CALL(*c2, Draw(_));
+	App->UpdateInterface();
+}
+

@@ -1,12 +1,12 @@
 #include<gtest\gtest.h>
 #include"../PT-Project/Statements/Start_End.h"
-
+#include"OutputMock.h"
 
 TEST(StartEndEdgeCoverage, FirstConstructor) {
 	Start_End *st = new Start_End(Point(50,50),0); // 0 for end
 	EXPECT_EQ(st->getCorner(),Point(50,50));
 	EXPECT_EQ(st->St_En, 0);
-	EXPECT_EQ(st->C, (Connector*)NULL);
+	EXPECT_EQ(st->Conn, (Connector*)NULL);
 	EXPECT_EQ(st->D_load, false);
 
 	EXPECT_EQ(st->In, Point(50 + UI.EllipseWidth/2 , 50));
@@ -104,7 +104,7 @@ TEST(StartEndEdgeCoverage, load) {
 
 	EXPECT_EQ(st->getCorner(), Point(50, 50));
 	EXPECT_EQ(st->St_En, 1);
-	EXPECT_EQ(st->C, (Connector*)NULL);
+	EXPECT_EQ(st->Conn, (Connector*)NULL);
 	EXPECT_EQ(st->D_load, true);
 
 	EXPECT_EQ(st->In, Point(50 + UI.EllipseWidth/2, 50));
@@ -125,7 +125,7 @@ TEST(StartEndEdgeCoverage, load) {
 	st->Load(file);
 	EXPECT_EQ(st->getCorner(), Point(50, 50));
 	EXPECT_EQ(st->St_En, 0);
-	EXPECT_EQ(st->C, (Connector*)NULL);
+	EXPECT_EQ(st->Conn, (Connector*)NULL);
 	EXPECT_EQ(st->D_load,false);
 
 	EXPECT_EQ(st->In, Point(50 + UI.EllipseWidth/2, 50));
@@ -139,3 +139,28 @@ TEST(StartEndEdgeCoverage, Run) {
 	map<string, double> m;
 	EXPECT_EQ(st->Run(m), 1);
 }
+
+TEST(StartEndEdgeCoverage, Draw) {
+	Start_End *st = new Start_End();
+	mockOutput2 *out = new mockOutput2();
+	EXPECT_CALL(*out, DrawEllipse(_,_,_,_,_));
+	st->Draw(out);
+}
+
+
+
+TEST(StartEndEdgeCoverage, PrintInfo_TEST_1) {
+	Start_End *st = new Start_End(Point(300,300),1);
+	mockOutput2 *out = new mockOutput2();
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment:" + " Start statement!"));
+	st->PrintInfo(out);
+}
+
+TEST(StartEndEdgeCoverage, PrintInfo_TEST_2) {
+	Start_End *st = new Start_End(Point(300, 300), 0);
+	mockOutput2 *out = new mockOutput2();
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment: " + " End statement !"));
+	st->PrintInfo(out);
+}
+
+

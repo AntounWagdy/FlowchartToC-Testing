@@ -101,11 +101,14 @@ TEST_F(ActionEdgeCoverage, Delete_Execute_Test5) {
 	App->AddStatement(st3);
 
 	App->AddConnector(c1);
-
-	in->setPoint(st1->getIn());
+	Point *par;
+	int size;
+	st1->getOut(par,size);
+	in->setPoint(Point(par[0].x, par[0].y+1));
 
 	a->Execute();
 
+	EXPECT_EQ(App->Statementcurrent(), 2);
 	EXPECT_EQ(App->Connectorcurrent(), 0);
 }
 

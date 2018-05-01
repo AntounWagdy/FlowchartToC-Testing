@@ -1,5 +1,6 @@
 #include"../PT-Project/Statements/SmplAssign.h"
 #include<gtest\gtest.h>
+#include"OutputMock.h"
 
 TEST(smplAssignEdgeCoverage, firstConstructor) {
 	SmplAssign *st = new SmplAssign(Point(50, 50), "X", 5);
@@ -101,3 +102,23 @@ TEST(smplAssignEdgeCoverage, Run) {
 	st->setLHS("X");
 	EXPECT_EQ(st->Run(m), 1);
 }
+
+
+TEST(smplAssignEdgeCoverage, Draw) {
+	SmplAssign *st = new SmplAssign(Point(50, 50), "", 5);
+	mockOutput2 *out = new mockOutput2();
+
+	EXPECT_CALL(*out, DrawAssign(_,_,_,_,_));
+	st->Draw(out);
+}
+
+
+TEST(smplAssignEdgeCoverage, PrintInfo) {
+	SmplAssign *st = new SmplAssign(Point(50, 50), "", 5);
+	mockOutput2 *out = new mockOutput2();
+
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment: " + ""));
+	st->PrintInfo(out);
+}
+
+

@@ -1,6 +1,6 @@
 #include"../PT-Project/Statements/Variable.h"
 #include<gtest\gtest.h>
-
+#include"OutputMock.h"
 
 TEST(VariableEdgeCoverage,FirstConstructor) {
 	Point pos = Point(50, 60);
@@ -117,4 +117,18 @@ TEST(VariableEdgeCoverage, Run) {
 	EXPECT_EQ(st->Run(m), 0);
 	m["Y"] = 2;
 	EXPECT_EQ(st->Run(m), 1);
+}
+
+TEST(VariableEdgeCoverage, Draw) {
+	Variable *st = new Variable();
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out, DrawAssign(_,_,_,_,_));
+	st->Draw(out);
+}
+
+TEST(VariableEdgeCoverage, PrintInfo) {
+	Variable *st = new Variable();
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment: " + ""));
+	st->PrintInfo(out);
 }

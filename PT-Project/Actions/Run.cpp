@@ -51,7 +51,8 @@ void Run_Action::Execute()
 				pOut->ClearStatusBar();
 				return;
 			}
-			else {
+			else
+			{ 
 				double val = variables[var];
 				string x;
 				stringstream Q(x);

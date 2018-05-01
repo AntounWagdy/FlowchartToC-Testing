@@ -1,6 +1,7 @@
 #include"../PT-Project/Statements/Connector.h"
 #include"../PT-Project/Statements/ReadWrite.h"
 #include"../PT-Project/Statements/Conditional.h"
+#include"OutputMock.h"
 
 #include<gtest\gtest.h>
 
@@ -135,4 +136,35 @@ TEST(ConnectorEdgeCoverage,Save ) {
 	file >> i;
 	EXPECT_EQ(i, 2);
 	file.close();
+}
+
+TEST(ConnectorEdgeCoverage,Draw) {
+	ReadWrite *st1 = new ReadWrite(Point(300, 300), "X", true);
+	ReadWrite *st2 = new ReadWrite(Point(300, 400), "y", true);
+	int size; Point *Parr;
+	st1->getOut(Parr, size);
+
+
+	Connector *c = new Connector(st1,st2,false);
+	mockOutput2 *out = new mockOutput2();
+
+	EXPECT_CALL(*out,DrawConn(Parr[0],st2->getIn(),_));
+	c->Draw(out);
+}
+
+TEST(ConnectorEdgeCoverage, PrintInfo) {
+	ReadWrite *st1 = new ReadWrite(Point(300, 300), "X", true);
+	ReadWrite *st2 = new ReadWrite(Point(300, 400), "y", true);
+
+	int size; Point *Parr;
+	st1->getOut(Parr, size);
+	Point End = st2->getIn();
+	Point Start = Parr[0];
+	Connector * c = new Connector(st1, st2, false);
+	mockOutput2 * out = new mockOutput2();
+	string S  = " --- Source is: (" + to_string(Start.x) + "," + to_string(Start.y) + ") --- " + "Distination is: (" + to_string(End.x) + "," + to_string(End.y) + ")";
+
+
+	EXPECT_CALL(*out, PrintMessage(S));
+	c->PrintInfo(out);
 }

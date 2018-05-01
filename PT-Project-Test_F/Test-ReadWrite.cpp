@@ -1,6 +1,6 @@
 #include<gtest\gtest.h>
 #include"../PT-Project/Statements/ReadWrite.h"
-
+#include"OutputMock.h"
 
 
 TEST(ReadWriteEdgeCoverage,FirstConstructor) {
@@ -159,4 +159,36 @@ TEST(ReadWriteEdgeCoverage, Run) {
 	EXPECT_EQ(st->Run(m), 3);
 	st->setString("X");
 	EXPECT_EQ(st->Run(m), 1);
+}
+
+
+TEST(ReadWriteEdgeCoverage, Draw_TEST_1) {
+	ReadWrite *st = new ReadWrite(Point(50,50),"x",true);
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out,DrawRead(_,_,_,_,_));
+	st->Draw(out);
+}
+
+
+TEST(ReadWriteEdgeCoverage, Draw_TEST_2) {
+	ReadWrite *st = new ReadWrite(Point(50, 50), "x", false);
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out, DrawWrite(_, _, _, _, _));
+	st->Draw(out);
+}
+
+
+
+TEST(ReadWriteEdgeCoverage, PrintInfo_TEST_1) {
+	ReadWrite *st = new ReadWrite(Point(50, 50), "x", true);
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out, PrintMessage("ID = "+to_string(st->getID())+", Comment: "+" Read statement\n"));
+	st->PrintInfo(out);
+}
+
+TEST(ReadWriteEdgeCoverage, PrintInfo_TEST_2) {
+	ReadWrite *st = new ReadWrite(Point(50, 50), "x", false);
+	mockOutput2 * out = new mockOutput2();
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment: " + " Write statement\n"));
+	st->PrintInfo(out);
 }

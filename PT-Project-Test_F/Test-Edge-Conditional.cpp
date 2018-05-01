@@ -1,5 +1,6 @@
 #include <gtest\gtest.h>
 #include"..\PT-Project\Statements\Conditional.h"
+#include"OutputMock.h"
 
 TEST(ConditionalEdgeCoverage, FirstConstructor) {
 	Point pos{ 50,50 };
@@ -205,7 +206,7 @@ TEST(ConditionalEdgeCoverage, Save) {
 }
 
 
-TEST(ConditionalEdgeCoverage, Load) {
+TEST(ConditionalEdgeCoverage, Load_TEST_1) {
 	Point pos{ 50,50 };
 	Conditional *s = new Conditional(pos, "X", ">", 2, "", 1);
 	
@@ -237,6 +238,40 @@ TEST(ConditionalEdgeCoverage, Load) {
 	EXPECT_EQ(st->Outlet[1].y, 50);
 	EXPECT_EQ(st->GetComment(), "\"\"");
 }
+
+TEST(ConditionalEdgeCoverage, Load_TEST_2) {
+	Point pos{ 50,50 };
+	Conditional *s = new Conditional(pos, "X", ">", 0, "Y", 2);
+
+	ofstream o;
+	o.open("cond.load.test");
+	s->Save(o);
+	o.close();
+
+
+	ifstream i;
+	string temp;
+	i.open("cond.load.test");
+	i >> temp;
+	Conditional *st = new Conditional();
+	st->Load(i);
+
+	EXPECT_NE(st, (Conditional *)NULL);
+	EXPECT_EQ(st->Text, "X>Y");
+	EXPECT_EQ(st->center.x, pos.x);
+	EXPECT_EQ(st->center.y, pos.y);
+	EXPECT_EQ(st->pConn[0], (Connector*)NULL);
+	EXPECT_EQ(st->pConn[1], (Connector*)NULL);
+	EXPECT_EQ(st->Inlet.x, 50);
+	EXPECT_EQ(st->Inlet.y, 50 - UI.COND_LGN);
+
+	EXPECT_EQ(st->Outlet[0].x, 50 + UI.COND_LGN);
+	EXPECT_EQ(st->Outlet[0].y, 50);
+	EXPECT_EQ(st->Outlet[1].x, 50 - UI.COND_LGN);
+	EXPECT_EQ(st->Outlet[1].y, 50);
+	EXPECT_EQ(st->GetComment(), "\"\"");
+}
+
 
 
 TEST(ConditionalEdgeCoverage, Run) {
@@ -381,4 +416,19 @@ TEST(ConditionalEdgeCoverage, Run) {
 	res = st->Run(m);
 	EXPECT_EQ(res, 2);
 
+}
+
+TEST(ConditionalEdgeCoverage,Draw) {
+	mockOutput2 *out = new mockOutput2();
+	Conditional *st = new Conditional(Point(700,700),"x",">=",1,"y",1);
+	EXPECT_CALL(*out,DrawCond(Point(700,700),_,_,_));
+	st->Draw(out);
+}
+
+
+TEST(ConditionalEdgeCoverage, PrintInfo) {
+	mockOutput2 *out = new mockOutput2();
+	Conditional *st = new Conditional(Point(700, 700), "x", ">=", 1, "y", 1);
+	EXPECT_CALL(*out, PrintMessage("ID = " + to_string(st->getID()) + ", Comment: " +""));
+	st->PrintInfo(out);
 }

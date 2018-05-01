@@ -13,9 +13,18 @@ using ::testing::Invoke;
 
 class mockWindow : public window {
 public:
-	mockWindow(int x,int y, int z,int w) :window(x,y,z,w){}
+	mockWindow(int x, int y, int z, int w) :window(x, y, z, w) {}
 	MOCK_METHOD1(WaitKeyPress, keytype(char&));
-	MOCK_METHOD2(WaitMouseClick, clicktype(int &,int &));
+	MOCK_METHOD2(WaitMouseClick, clicktype(int &, int &));
+	MOCK_METHOD5(DrawLine, void(const int, const int, const int, const int, const drawstyle));
+	MOCK_METHOD7(DrawRectangle, void(const int, const int, const int, const int, const drawstyle, const int, const int));
+	MOCK_METHOD4(DrawPolygon, void(const int*, const int*, const int, const drawstyle));
+	MOCK_METHOD5(DrawEllipse, void(const int, const int, const int, const int, const drawstyle));
+	MOCK_METHOD3(DrawString, void(const int iX, const int iY, const string));
+	MOCK_METHOD5(DrawImage, void(const image &, const int, const int, const int, const int));
+	MOCK_METHOD2(SetPen, color(const color&, const int iWidth));
+	MOCK_METHOD4(SetFont, void(const int, const unsigned short, const fontfamily, const char*));
+
 
 	vector<char> cs;
 	vector<Point> pps;
@@ -40,11 +49,13 @@ public:
 	}
 };
 
-struct GUIEdgeCoverage : testing::Test {
+
+
+struct TEST_FIXTRE_2 : testing::Test {
 	Input * in;
 	Output * out;
 	mockWindow * win;
-	void SetUp() {		
+	void SetUp() {
 		out = new Output();
 		win = new mockWindow(UI.width, UI.height, UI.wx, UI.wy);
 
@@ -61,3 +72,7 @@ struct GUIEdgeCoverage : testing::Test {
 		*/
 	}
 };
+
+typedef TEST_FIXTRE_2 GUIEdgeCoverage;
+typedef TEST_FIXTRE_2 GUIEdgePairCoverage;
+typedef TEST_FIXTRE_2 GUIGACCCoverage;

@@ -172,10 +172,9 @@ Statement *ApplicationManager::GetStatement(Point P) const
 {
 	for (int i = 0; i < StatCount;i++) 
 	{
-		if (dynamic_cast<Conditional*>(StatList[i]))
+		if (dynamic_cast<Conditional*>(StatList[i])) // Conditional Statement
 		{
 			if (P.x >= StatList[i]->getCorner().x && (P.x <= StatList[i]->getCorner().x + (1.4*StatList[i]->width_height().x)*sqrt(2)) && (P.y >= StatList[i]->getCorner().y) && (P.y <= StatList[i]->getCorner().y + (1.4*StatList[i]->width_height().y)*sqrt(2)))
-			//if Conditional 
 			return StatList[i];
 		}
 		else if ((P.x >= StatList[i]->getCorner().x) && (P.x <= StatList[i]->getCorner().x + StatList[i]->width_height().x) && (P.y >= StatList[i]->getCorner().y) && (P.y <= StatList[i]->getCorner().y + StatList[i]->width_height().y))
@@ -230,6 +229,7 @@ ApplicationManager::~ApplicationManager()
 		delete StatList[i];
 	for(int i=0; i<ConnCount; i++)
 		delete ConnList[i];
+
 	delete pIn;
 	delete pOut;	
 }

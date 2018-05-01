@@ -8,7 +8,7 @@ Start_End::Start_End(Point Lcorner, int s )// if s=0 draw end, if s=1 draw start
 	LeftCorner = Lcorner;
 	St_En = s;
 	UpdateStatementText();
-	C= NULL;	//No connectors yet
+	Conn= NULL;	//No connectors yet
 	In.x = LeftCorner.x + UI.EllipseWidth /2;
 	In.y = LeftCorner.y;
 
@@ -28,8 +28,8 @@ void Start_End::Draw(Output* pOut) const
 void Start_End::PrintInfo(Output*Pout) 
 {
 	ostringstream S;
-	S<<"ID = "<<ID<<", Comment: "<<C;
-	if (St_En == 0)
+	S<<"ID = "<<ID<<", Comment: "<< C;  // BUG #5 C was the connector here
+ 	if (St_En == 0)
 		S << " End statement !";
 	else 
 		S<<"Start statement!";
@@ -47,12 +47,12 @@ void Start_End::UpdateStatementText()
 
 
 void Start_End::setConn(Connector*x)
-{ C = x; }
+{ Conn = x; }
 void Start_End::getConn(Connector **&arr, int &size)
 { 
 	size = 1;
 	arr = new Connector*[size];
-	arr[0] = C;
+	arr[0] = Conn;
 }
 Point Start_End::getIn()
 { return In; }
@@ -99,7 +99,7 @@ void Start_End::Load(ifstream & InFile)
 	}
 
 	//Inlet & Outlet
-	C = NULL;	//No connectors yet
+	Conn = NULL;	//No connectors yet
 	In.x = LeftCorner.x + UI.EllipseWidth / 2;
 	In.y = LeftCorner.y;
 

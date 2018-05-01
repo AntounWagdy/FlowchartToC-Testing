@@ -10,7 +10,10 @@ private:
 public:
 
 	friend class TEST_FIXTURE; // to get windows in test to init input
-	friend class GUIEdgeCoverage; // to get windows in test to init input
+	friend class TEST_FIXTURE_2; // to get windows in test to init input
+	friend class TEST_FIXTURE_3; // to get windows in test to init input
+
+	FRIEND_TEST(GUIEdgeCoverage, outputConstructor);
 
 	Output();	
 
@@ -25,16 +28,13 @@ public:
 	void ClearDrawArea();	//Clears the drawing area
 
 	// -- Statements Drawing Functions
-	void DrawAssign(Point Left, int width, int height, string Text, bool Selected=false);
-	void DrawCond(Point Center,int length, string Text, bool Selected = false);
-	void DrawConn(Point p1, Point p2, bool selected = false);
-	void DrawEllipse(Point Left,int ,int , string Text, bool Selected = false);
+	virtual void DrawAssign(Point Left, int width, int height, string Text, bool Selected=false);
+	virtual void DrawCond(Point Center,int length, string Text, bool Selected = false);
+	virtual void DrawConn(Point p1, Point p2, bool selected = false);
+	virtual void DrawEllipse(Point Left,int ,int , string Text, bool Selected = false);
 
-	//TODO: Add similar functions for drawing all other statements.
-	//		e.g. DrawCondtionalStat(......), DrawStart(......), DrawEnd(.......), ...etc
-	//		Decide the parameters that should be passed to each of them
-	void DrawRead(Point left, int width, int height, string text, bool selected = false);
-	void DrawWrite(Point left, int width, int height, string text, bool selected = false);
+	virtual void DrawRead(Point left, int width, int height, string text, bool selected = false);
+	virtual void DrawWrite(Point left, int width, int height, string text, bool selected = false);
 
 		
 	virtual void PrintMessage(string msg);	//Prints a message on Status bar

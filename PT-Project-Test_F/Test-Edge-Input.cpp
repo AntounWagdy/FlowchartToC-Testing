@@ -30,15 +30,18 @@ TEST_F(GUIEdgeCoverage, GetValue) {
 
 	win->addChars(45);
 	win->addChars(45);
+	win->addChars(57);
 	win->addChars(13);
 	s = in->GetValue(out);
-	EXPECT_EQ(s, 0);
+	EXPECT_EQ(s, -9);
 
+	win->addChars(56);
 	win->addChars(46);
 	win->addChars(46);
+	win->addChars(56);
 	win->addChars(13);
 	s = in->GetValue(out);
-	EXPECT_EQ(s, 0);
+	EXPECT_EQ(s, 8.8);
 
 	
 	win->addChars(8);
@@ -205,4 +208,12 @@ TEST_F(GUIEdgeCoverage, GetUserAction) {
 	s = in->GetUserAction();
 	EXPECT_EQ(s, No_Action);
 
+}
+
+TEST_F(GUIEdgeCoverage, GetPointClicked) {
+	EXPECT_CALL(*win, WaitMouseClick(_,_));
+	win->addPoint(Point(1,2));
+	Point p;
+	in->GetPointClicked(p);
+	EXPECT_EQ(p, Point(1, 2));
 }

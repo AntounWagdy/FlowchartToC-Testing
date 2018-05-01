@@ -31,7 +31,8 @@ public:
 	FRIEND_TEST(ConditionalEdgeCoverage, OperatorS);
 	FRIEND_TEST(ConditionalEdgeCoverage, settersANDgetters);
 	FRIEND_TEST(ConditionalEdgeCoverage, Save);
-	FRIEND_TEST(ConditionalEdgeCoverage, Load);
+	FRIEND_TEST(ConditionalEdgeCoverage, Load_TEST_1);
+	FRIEND_TEST(ConditionalEdgeCoverage, Load_TEST_2);
 	FRIEND_TEST(ConditionalEdgeCoverage, Run);
 
 	Conditional(Point center, string LeftHS ,string op ,double RightHS1,string RightHS2,double);

@@ -5,7 +5,7 @@
 class Start_End: public Statement 
 {
 private:
-	Connector *C;
+	Connector *Conn;
 	Point In;
 	Point Out;
 	Point LeftCorner;

@@ -35,7 +35,6 @@ bool Statement::IsValid(string s) //as A variable
 		if (isspace(s[i]) || (ispunct(s[i]) && int(s[i]) != 95))
 		{
 			return false;
-			break;
 		}
 	}
 	return true;

@@ -1,10 +1,10 @@
 #include "Output.h"
 
-//string dir = "";
+string dir = "";
 //string dir = "..\\";
 //string dir = "..//..//..//Project Framework//";
 //string dir = "..//";
-string dir = "E:\\CMP 2018\\402\\Testing\\Trials\\PT-Project\\";
+//string dir = "E:\\CMP 2018\\402\\Testing\\Trials\\PT-Project\\";
 
 Output::Output(){
 	//Initialize user interface parameters
@@ -71,7 +71,6 @@ void Output::CreateStatusBar()
 void Output::CreateDesignToolBar()
 {
 	UI.AppMode = DESIGN;	//Design Mode
-	int i = 0;
 	pWind->DrawImage(dir + "images\\lasttool.jpg", 0, 0); //NEW !
 }
 
@@ -79,7 +78,6 @@ void Output::CreateDesignToolBar()
 void Output::CreateSimulationToolBar()
 {
 	UI.AppMode = SIMULATION;	//Simulation Mode
-	///TODO: add code to create the simulation tool bar
 	pWind->DrawImage(dir + "images\\bg1.jpg", 0, 0);
 	pWind->DrawImage(dir + "images\\newsim.jpg", 0, 0);
 

@@ -9,8 +9,8 @@
 #include<gmock\gmock.h>
 
 class Output;
-class Input		//The application manager should have a pointer to this class
-{
+
+class Input	{	//The application manager should have a pointer to this class
 protected:
 	window *pWind;	//Pointer to the Graphics Window
 public:

@@ -146,6 +146,7 @@ ActionType Input::GetUserAction() const
 				return DEL;
 			if (x > 838 && x <= 908)
 				return  EXIT;
+			return DSN_TOOL; // BUG #3
 		}
 
 		//[2] User clicks on the drawing area

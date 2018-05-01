@@ -72,7 +72,6 @@ enum DsgnMenuItem //The items of the design menu (you should add more items)
 
 	ITM_EXIT,		//Exit
 	
-	//TODO: Add more items names here
 	
 	ITM_DSN_CNT		//no. of design menu items ==> This should be the last line in this enum
 	
@@ -84,9 +83,6 @@ enum SimMenuItem //The items of the simulation menu (you should add more items)
 	//Note: Items are ordered here as they appear in menu
 	ITM_RUN,	//Run
 	ITM_STP,	//Step by step
-	
-	//TODO:Add more items names here
-	
 	ITM_SIM_CNT		//no. of simulation menu items ==> This should be the last line in this enum
 	
 };

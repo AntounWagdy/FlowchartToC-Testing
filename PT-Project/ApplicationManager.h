@@ -37,10 +37,12 @@ private:
 	bool IsPointBetween(Point, Point, Point) const; //To get Connector between two points
 
 public:
+	friend struct TEST_FIXTURE_3;
 
 	FRIEND_TEST(AppEdgeCoverage, Constructor);
 	FRIEND_TEST(AppEdgeCoverage, IsPointBetween);
-
+	FRIEND_TEST(AppEdgeCoverage_F, GetUserAction);
+	FRIEND_TEST(AppGACCCoverage, isPointBetween);
 	ApplicationManager();
 	~ApplicationManager();
 

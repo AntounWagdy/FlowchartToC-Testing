@@ -7,7 +7,7 @@ TEST_F(ActionEdgeCoverage,AddCond_ReadActionParams_TEST1) {
 	EXPECT_CALL(*out, PrintMessage("Conditional Assignment Statement: Click a valid Point to Draw the statement")).Times(2);
 	EXPECT_CALL(*out, PrintMessage("Enter The Left hand Side")).Times(2);
 	EXPECT_CALL(*out, PrintMessage("Enter the Right hand side: ")).Times(1);
-	EXPECT_CALL(*out, PrintMessage("Enter the Right hand side Type (1- double,2-string)")).Times(1);
+	EXPECT_CALL(*out, PrintMessage("Enter the Right hand side Type (1- double,2-string)")).Times(2);
 	EXPECT_CALL(*out, PrintMessage("Enter a Valid Operator")).Times(2);
 
 	in->setPoint(Point());
@@ -18,7 +18,7 @@ TEST_F(ActionEdgeCoverage,AddCond_ReadActionParams_TEST1) {
 		.WillOnce(Return("_Y")).WillOnce(Return("<<"))
 		.WillOnce(Return("<="));
 
-	EXPECT_CALL(*in, GetValue(_)).WillOnce(Return(2));
+	EXPECT_CALL(*in, GetValue(_)).WillOnce(Return(3)).WillOnce(Return(2));
 
 	a->ReadActionParameters();
 }

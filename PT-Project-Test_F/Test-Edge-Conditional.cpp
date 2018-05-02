@@ -3,11 +3,13 @@
 #include"OutputMock.h"
 
 TEST(ConditionalEdgeCoverage, FirstConstructor) {
+	
 	Point pos{ 50,50 };
 	Conditional *st = new Conditional(pos, "X", ">", 2, "", 1);
+
+
+
 	EXPECT_NE(st , (Conditional *)NULL);
-
-
 	EXPECT_EQ(st->Text, "X>2");
 	EXPECT_EQ(st->center.x, pos.x);
 	EXPECT_EQ(st->center.y, pos.y);

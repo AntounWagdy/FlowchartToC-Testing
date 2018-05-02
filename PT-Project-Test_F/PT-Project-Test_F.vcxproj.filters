@@ -238,12 +238,6 @@
     <ClCompile Include="Test-Save.cpp">
       <Filter>Test-Actions</Filter>
     </ClCompile>
-    <ClCompile Include="Test-Input.cpp">
-      <Filter>Test-GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="Test-ApplicatitonManager.cpp">
-      <Filter>Test-ApplicationManager</Filter>
-    </ClCompile>
     <ClCompile Include="Test-Edge-Conditional.cpp">
       <Filter>Test-Statements</Filter>
     </ClCompile>
@@ -306,6 +300,31 @@
     <ClCompile Include="Test-EdgePair-Statement.cpp">
       <Filter>Statements</Filter>
     </ClCompile>
+    <ClCompile Include="Test-Edge-Input.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-EdgePair-Input.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-GUI.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST-Edge-output.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-EdgePair-Output.cpp">
+      <Filter>Test-GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-Edge-ApplicatitonManager.cpp">
+      <Filter>Test-ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST-EdgePair-ApplicationManager.cpp">
+      <Filter>Test-ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-G_CC-ApplicationManager.cpp">
+      <Filter>Test-ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Test-main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\PT-Project\Statements\Conditional.h">
@@ -445,6 +464,13 @@
     <ClInclude Include="WindowsMock.h">
       <Filter>Test-GUI</Filter>
     </ClInclude>
+    <ClInclude Include="StatementInputOutputMock.h">
+      <Filter>Test-ApplicationManager</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputMock.h">
+      <Filter>Test-Statements</Filter>
+    </ClInclude>
+    <ClInclude Include="mainMock.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\PT-Project\CMUgraphicsLib\Manual.txt">

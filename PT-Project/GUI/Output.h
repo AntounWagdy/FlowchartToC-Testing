@@ -12,6 +12,7 @@ public:
 	friend class TEST_FIXTURE; // to get windows in test to init input
 	friend class TEST_FIXTURE_2; // to get windows in test to init input
 	friend class TEST_FIXTURE_3; // to get windows in test to init input
+	friend class TEST_FIXTURE_4; // to get windows in test to init input
 
 	FRIEND_TEST(GUIEdgeCoverage, outputConstructor);
 

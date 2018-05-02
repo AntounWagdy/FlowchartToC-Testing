@@ -107,23 +107,30 @@
     <ClCompile Include="Test-AddSmplAssgn.cpp" />
     <ClCompile Include="Test-AddStartEnd.cpp" />
     <ClCompile Include="Test-AddVatiable.cpp" />
-    <ClCompile Include="Test-ApplicatitonManager.cpp" />
+    <ClCompile Include="Test-Edge-ApplicatitonManager.cpp" />
     <ClCompile Include="Test-Comment.cpp" />
     <ClCompile Include="Test-Edge-Conditional.cpp" />
     <ClCompile Include="Test-Edge-Connector.cpp" />
     <ClCompile Include="Test-Delete.cpp" />
+    <ClCompile Include="TEST-Edge-output.cpp" />
     <ClCompile Include="Test-EdgePair-AddConn.cpp" />
+    <ClCompile Include="TEST-EdgePair-ApplicationManager.cpp" />
     <ClCompile Include="Test-EdgePair-Conditional.cpp" />
+    <ClCompile Include="Test-EdgePair-Input.cpp" />
+    <ClCompile Include="Test-EdgePair-Output.cpp" />
     <ClCompile Include="Test-EdgePair-Statement.cpp" />
     <ClCompile Include="Test-G_CC-Actions.cpp" />
     <ClCompile Include="Test-G_CC-AddConn.cpp" />
+    <ClCompile Include="Test-G_CC-ApplicationManager.cpp" />
     <ClCompile Include="Test-G_CC-Conditional.cpp" />
+    <ClCompile Include="Test-G_CC-GUI.cpp" />
     <ClCompile Include="Test-G_CC-Run.cpp" />
     <ClCompile Include="Test-G_CC-Statement.cpp" />
     <ClCompile Include="Test-G_CC-Validate.cpp" />
     <ClCompile Include="Test-G_CC-Variable.cpp" />
-    <ClCompile Include="Test-Input.cpp" />
+    <ClCompile Include="Test-Edge-Input.cpp" />
     <ClCompile Include="Test-Load.cpp" />
+    <ClCompile Include="Test-main.cpp" />
     <ClCompile Include="Test-ReadWrite.cpp" />
     <ClCompile Include="Test-Edge-Run.cpp" />
     <ClCompile Include="Test-Save.cpp" />
@@ -180,6 +187,9 @@
     <ClInclude Include="..\PT-Project\Statements\Statement.h" />
     <ClInclude Include="..\PT-Project\Statements\Variable.h" />
     <ClInclude Include="InputOutputAppManagerMocking.h" />
+    <ClInclude Include="mainMock.h" />
+    <ClInclude Include="OutputMock.h" />
+    <ClInclude Include="StatementInputOutputMock.h" />
     <ClInclude Include="WindowsMock.h" />
   </ItemGroup>
   <ItemGroup>

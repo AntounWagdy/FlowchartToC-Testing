@@ -1,16 +1,4 @@
-7
-STRT   731   90   73   ""
-VARIABLE   732   50   50   B   O     ""
-SmplAssign   733   50   50   P   12   ""
-WRITE   734   50   50   P    ""
-READ   735   50   50   P   ""
-COND   736   50   7   P  SmlEqu   12    ""
-END   737   90   73   ""
-7
-731   735   0
-735   732   0
-732   733   0
-733   736   0
-736   734   1
-736   737   2
-734   737   0
+2
+SmplAssign   8   120   200   X   12   This is a comment :D
+VARIABLE   9   320   200   Y   X     ""
+0

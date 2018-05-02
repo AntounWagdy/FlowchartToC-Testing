@@ -70,7 +70,6 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 
 		case EXIT:
 			return;
-			break;
 
 		case STATUS: //If user clicked in status Bar 
 			return;
@@ -136,6 +135,10 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			{
 				delete pAct;
 				pAct = new Run_Action(this);
+			}
+			else { // BUG 6
+				delete pAct;
+				pAct = NULL;
 			}
 			break;
 		case DEBUG:

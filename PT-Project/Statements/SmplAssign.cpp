@@ -93,7 +93,8 @@ void SmplAssign::Load(ifstream&In)
 {
 	int I; double d;
 	string comment, L;
-	In >> I >> LeftCorner.x >> LeftCorner.y >> L >> d >> comment;
+	In >> I >> LeftCorner.x >> LeftCorner.y >> L >> d;
+	getline(In,comment); // BUG #5
 	Comment(comment);
 	SetID(I); setLHS(L); setRHS(d);
 

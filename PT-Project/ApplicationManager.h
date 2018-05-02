@@ -38,6 +38,7 @@ private:
 
 public:
 	friend struct TEST_FIXTURE_3;
+	friend struct TEST_FIXTURE_4;
 
 	FRIEND_TEST(AppEdgeCoverage, Constructor);
 	FRIEND_TEST(AppEdgeCoverage, IsPointBetween);
@@ -48,7 +49,7 @@ public:
 
 	// -- Actions Related Functions
 	//Reads the input command from the user and returns the corresponding action type
-	ActionType GetUserAction() const;
+	virtual ActionType GetUserAction() const;
 	void ExecuteAction(ActionType); //Creates an action and executes it
 
 	Statement** Statementlist() { return StatList; }
